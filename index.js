@@ -4,9 +4,9 @@ var Options = awsCli.Options;
 var Aws = awsCli.Aws;
 
 var options = new Options(
-  /* accessKey    */ 'ASIAQYYWBNOUIBKSWV52',
-  /* secretKey    */ '5C4RU4vXhRzAyHWBA+17zMlpGvbQvRNAac+1qasW',
-  /* sessionToken */ 'FwoGZXIvYXdzEIT//////////wEaDM7ob+O383Aeyv9wRSLHATujbJ6Cjb20VqjruZHSfaNv+AGHEATXEJlpEVwXq/RBGNcfjF+W8+hcPXtgunNXWq3y66GM9vI4VRrs7rVnOrqUGG+VUkaNk0WkUQ8tlMNUil2lL/r8MVL91/UkTGbSx6+EVuQB/YjtKX1fZmrzQVbZxDW9yayXsQYyJpX2NVkIa7Yzj7ZUVRFW7672ikZIksyqmsWhfyumEnijXnODcHYMWkiLtGl2Adius23O7+IaT0jdbqmlj41ZBbQ46qUIFdBIEQpsx1sot9GpjQYyLUgvVU6IdPl1CU3syn+bsFK4K8nc1/6fNk8rTEnGLLwXlXVyWIY+RlYFHzSurg==',
+  /* accessKey    */ 'AKIAXURMNZICEBWYBIM3',
+  /* secretKey    */ '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',
+  /* sessionToken */ 'IQoJb3JpZ2luX2VjEBsaCXVzLWVhc3QtMSJHMEUCIQDCvH9SRFUsuS6pA74LxHz95fucF49P1s/KR5Jxln4l/AIgPnW5c8sNljJzK4Qjey9edno5cAwKMHCpwF/xffBVfrkq9AEI9P//////////ARAAGgw1MjUxNTI5MzAzMDgiDEIxOAUPZxGBbDyq9irIAV9BK/ek865Qy11o9D+Ixk7pLpdrrfehfvAIPtbqljF8YL7kEFGDCD0j0iKW9Apvq1Ab8sF+ani6OPs6aTV5XTmlODfixmtn/A5eiA4qFviYUFvovhRPoTc7Dth1CIHSmuyziyXdyexC6yTdSXN/sEZ2C4ci1UlpN1RD2qp9q7aCwfKoSX0mHEQX4HkQWvgd25azrlUPGuSW3ePUwqyFZMuIkipLVplA7T/Jl1JIi7bgteKE6fTSWIkDDqOnCfjtl71q63LoFaSnMKrHzo0GOpgBraKiNeNwtgUTszay7//Y1MYbOZT3LUaYk9Yis1E1ONWxIAJeJpRFru4iI2hUVbZDDNUs1anvercAcp6yuNByRLUT+SZxpPe2KMJs7trU/PaW+QW+O0Qjn3OBh7wlFBxr2hyX27GNdKYM/ug1JEi1W66HCBemiC3unnfHSeVXHOQrsI90lFAlgjikeQjjCceuSYsBRJW47Qw=',
   /* currentWorkingDirectory */ null,
   /* cliPath */ 'aws'
 );
@@ -16,9 +16,7 @@ const aws = new Aws(options);
 const hostname = '0.0.0.0';
 const port = 3000;
 
-aws.command('iam list-users').then((data)=> {
-  console.log('data = ', data); 
-});
+
 
 const server = http.createServer((req, res) => {
   
